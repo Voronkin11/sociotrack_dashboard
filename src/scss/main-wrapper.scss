@@ -1,0 +1,20 @@
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    background: #EFF7ED;
+    
+    &__aside {
+        position: relative;
+        width: 180px;
+        flex-shrink: 0;
+
+        @media only screen and (min-width: 960px) {
+            width: 240px;
+        }
+    }
+
+    &__main {
+        flex: 1;
+    }
+}

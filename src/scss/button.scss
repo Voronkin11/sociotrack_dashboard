@@ -1,0 +1,32 @@
+.button {
+    min-width: 154px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    background: transparent;
+    border: 1px solid #1CAF5E;
+    border-radius: 4px;
+    color: #1CAF5E;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        box-shadow: #1CAF5E 0 0 10px 30px inset;
+        color: #FFFFFF;
+    }
+
+    &--form {
+        min-width: 117px;
+        background: linear-gradient(180deg, #53CD72 0%, #1CAF5E 100%);
+        border-radius: 6px;
+        color: #FFFFFF;
+
+        &:hover,
+        &:focus {
+            box-shadow: #FFFFFF 0 0 10px 30px inset;
+            color: #1CAF5E;
+        }
+    }
+}

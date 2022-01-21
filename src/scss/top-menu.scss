@@ -1,0 +1,50 @@
+.top-menu {
+    display: flex;
+    column-gap: 32px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+
+        &--notification {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: attr(data-notification);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 17px;
+                height: 17px;
+                font-size: 10px;
+                font-weight: 700;
+                line-height: 12px;
+                background-color: #1DCE6C;
+                border-radius: 50%;
+                transform: translate(50%, -50%);
+            }
+        }
+    }
+    
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        border: none;
+        transition: 0.3;
+        outline: none;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
+    }
+}

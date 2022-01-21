@@ -1,0 +1,15 @@
+.content-list {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% / 2) - 15px));
+    gap: 25px 30px;
+    list-style: none;
+
+    @media only screen and (min-width: 960px) {
+        grid-template-columns: repeat(3, calc((100% / 3) - 20px));
+    }
+
+    @media only screen and (min-width: 1280px) {
+        grid-template-columns: repeat(4, calc((100% / 4) - 37.5px));
+        gap: 25px 50px;
+    }
+}

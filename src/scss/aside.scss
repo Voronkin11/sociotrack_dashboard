@@ -1,0 +1,24 @@
+.aside {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #27B983 -18.15%, #91E857 266.75%);
+    box-shadow: inset -1px 0px 0px rgba(28, 175, 94, 0.1);
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 70px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0px 1px 0px rgba(28, 175, 94, 0.1);
+    }
+
+    &__bottom-menu {
+        margin-top: auto;
+    }
+}

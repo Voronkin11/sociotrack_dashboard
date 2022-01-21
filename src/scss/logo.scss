@@ -1,0 +1,9 @@
+.logo {
+    outline: none;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+    }
+}
